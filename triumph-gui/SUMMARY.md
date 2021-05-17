@@ -9,3 +9,4 @@
 # Testing index
 
 * [Entry 4](test.md)
+* [Entry 5](test.md)
