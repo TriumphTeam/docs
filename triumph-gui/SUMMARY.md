@@ -5,9 +5,8 @@
   * [Sub](test.md)
   * [Sub 2](test.md)
 * [Entry 3](test.md)
+* [Another entry](test.md)
 
-# Testing index
+# Header example
 
-* [Entry 4](test.md)
-  * [Sub Entry 3](test.md)
 * [Entry 5](test.md)
