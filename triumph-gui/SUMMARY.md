@@ -1,12 +1,12 @@
-# Testing index
+# Welcome
 
-* [Entry](test.md)
-* [Entry 2](test.md)
-  * [Sub](test.md)
-  * [Sub 2](test.md)
-* [Entry 3](test.md)
-* [Another entry](test.md)
+* [Introduction](test.md)
 
-# Header example
+# Lorem ipsum
 
-* [Entry 5](test.md)
+* [Lorem ipsum](test.md)
+  * [Lorem ipsum](test.md)
+  * [Lorem ipsum](test.md)
+* [Lorem ipsum](test.md)
+* [Lorem ipsum](test.md)
+* [Lorem ipsum](test.md)
