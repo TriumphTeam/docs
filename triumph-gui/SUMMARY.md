@@ -7,7 +7,6 @@
 * [Lorem ipsum](ipsum1)
 * [Lorem ipsum](ipsum2)
 * [Lorem ipsum](ipsum3)
-* [Lorem ipsum](ipsum4)
 
 # Test
 
