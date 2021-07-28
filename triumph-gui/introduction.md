@@ -16,6 +16,10 @@
 
 `code`
 
+```kt
+  val badCode = "Just testing code blocks"
+```
+
 [title](https://www.example.com)
 
 ![alt text](https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png)
