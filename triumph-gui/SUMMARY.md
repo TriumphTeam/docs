@@ -1,15 +1,15 @@
 # Welcome
 
-* [Introduction](test.md)
+* [Introduction](introduction)
 
 # Lorem ipsum
 
-* [Lorem ipsum](test.md)
-* [Lorem ipsum](test.md)
-* [Lorem ipsum](test.md)
-* [Lorem ipsum](test.md)
+* [Lorem ipsum](ipsum1)
+* [Lorem ipsum](ipsum2)
+* [Lorem ipsum](ipsum3)
+* [Lorem ipsum](ipsum4)
 
 # Test
 
-* [Lorem ipsum](test.md)
-* [Lorem ipsum](test.md)
+* [Lorem ipsum](ipsum5)
+* [Lorem ipsum](ipsum6)
