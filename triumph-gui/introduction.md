@@ -2,6 +2,8 @@
 ## H2
 ### H3
 
+<center># Center test</center>
+
 **bold text**
 *italicized text*
 > blockquote
