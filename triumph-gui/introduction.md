@@ -1,31 +1,29 @@
-# H1
-## H2
-### H3
+<img src="https://cdn.discordapp.com/attachments/431545763928211457/853353180271214662/mfthread.png">
+# <center>Welcome to triumph-gui 👋</center>
+<p>
+  <img src="https://img.shields.io/github/license/TriumphTeam/triumph-gui?color=blue&style=flat-square"  alt="license"/>
+  <img src="https://img.shields.io/github/v/release/TriumphTeam/triumph-gui?color=green&style=flat-square" alt="release">
+  <a href="https://mattstudios.me/discord"><img src="https://img.shields.io/discord/493380790718038028?label=discord&style=flat-square"  alt="language"/></a>
+</p>
 
-<center># Center test</center>
+> This lib was made to simplify the creation of GUIs.
 
-**bold text**
-*italicized text*
-> blockquote
+## Author
 
-1. First item
-2. Second item
-3. Third item
+👤 **TriumphTeam**
 
-- First item
-- Second item
-- Third item
+* Documentation: https://mf.mattstudios.me/triumph-gui/
+* Github: [@ipsk](https://github.com/ipsk)
 
-`code`
+## 🤝 Contributing
 
-```kt
-  val badCode = "Just testing code blocks"
-```
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TriumphTeam/triumph-gui/issues).
 
-[title](https://www.example.com)
+## Show your support
 
-![alt text](https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png)
+Give a ⭐️ if this project helped you!
 
-# Another test
+## 📝 License
 
-// TODO MORE!
+Copyright © 2021 [TriumphTeam](https://github.com/ipsk).<br />
+This project is [MIT](https://github.com/TriumphTeam/triumph-gui/blob/master/LICENSE) licensed.
