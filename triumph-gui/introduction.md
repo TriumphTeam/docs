@@ -10,7 +10,7 @@
 
 ## Author
 
-👤 **TriumphTeam**
+**TriumphTeam**
 
 * Documentation: https://mf.mattstudios.me/triumph-gui/
 * Github: [@ipsk](https://github.com/ipsk)
