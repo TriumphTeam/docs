@@ -1,29 +1,35 @@
-<img src="https://cdn.discordapp.com/attachments/431545763928211457/853353180271214662/mfthread.png">
-<h1 align="center">Welcome to triumph-gui</h1>
-<p>
-  <img src="https://img.shields.io/github/license/TriumphTeam/triumph-gui?color=blue&style=flat-square"  alt="license"/>
-  <img src="https://img.shields.io/github/v/release/TriumphTeam/triumph-gui?color=green&style=flat-square" alt="release">
-  <a href="https://mattstudios.me/discord"><img src="https://img.shields.io/discord/493380790718038028?label=discord&style=flat-square"  alt="discord"/></a>
-</p>
+# Paginated GUI
 
-> This lib was made to simplify the creation of GUIs.
+![](../../.gitbook/assets/ezgif-6-90e434269b68.gif)
 
-## Author
+## Creating a Paginated GUI
 
-**TriumphTeam**
+To create a Paginated GUI all you need to do is:
 
-* Documentation: https://mf.mattstudios.me/triumph-gui/
-* Github: [@ipsk](https://github.com/ipsk)
+```java
+// Main constructor
+PaginatedGui gui = Gui.paginated()
+        .title(Component.text("GUI Title!"))
+        .rows(6)
+        .pageSize(45) // Set the size you want, or leave it to be automatic.
+        .create();
+```
 
-## Contributing
+The page size, is how big the page should be, in the example above it's 45 slots dedicated for the page, if nothing is set the lib will calculate the page size when opening.
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TriumphTeam/triumph-gui/issues).
+## Creating the navigation
 
-## Show your support
+To create the navigation items we can simply do:
 
-Give a star if this project helped you!
+```java
+// Previous item
+paginatedGui.setItem(6, 3, ItemBuilder.from(Material.PAPER).setName("Previous").asGuiItem(event -> paginatedGui.previous()));
+// Next item
+paginatedGui.setItem(6, 7, ItemBuilder.from(Material.PAPER).setName("Next").asGuiItem(event -> paginatedGui.next()));
+```
 
-## License
+Recommended to add a default click action to cancel the click even when working with pagination, if not, then make sure the navigation item cancels the click before doing `PaginatedGui#next/previous` .
 
-Copyright © 2021 [TriumphTeam](https://github.com/ipsk).<br />
-This project is [MIT](https://github.com/TriumphTeam/triumph-gui/blob/master/LICENSE) licensed.
+## Populating the page
+
+To add items to the page once again we use the `PaginatedGui#addItem` which takes a `GuiItem`. Items added with `PaginatedGui#setItem` will not be counted towards the page but as static GUI items.
