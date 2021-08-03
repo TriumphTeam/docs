@@ -28,6 +28,24 @@ paginatedGui.setItem(6, 3, ItemBuilder.from(Material.PAPER).setName("Previous").
 paginatedGui.setItem(6, 7, ItemBuilder.from(Material.PAPER).setName("Next").asGuiItem(event -> paginatedGui.next()));
 ```
 
+Kotlin test
+```kt
+listening {
+    on<GithubPush> {
+        log { "Detected Github push." }
+        checkRepository()
+    }
+}
+```
+
+Gradle test
+```groovy
+dependencies {
+    implementation "joda-time:joda-time:2.2"
+    testImplementation "junit:junit:4.12"
+}
+```
+
 Recommended to add a default click action to cancel the click even when working with pagination, if not, then make sure the navigation item cancels the click before doing `PaginatedGui#next/previous` .
 
 ## Populating the page
