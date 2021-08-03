@@ -32,7 +32,7 @@ Kotlin test
 ```kt
 routing {
 
-    post<Api.Summary> { location ->
+    post<Summary> { location ->
         val summary = transaction {
             val project = getProject(location.project) ?: return@transaction null
 
