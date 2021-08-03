@@ -4,7 +4,7 @@
 
 ## Creating a Paginated GUI
 
-To create a Paginated GUI all you need to do is:
+To create a Paginated GUI `code` test `here` all you need to do is:
 
 ```java
 // Main constructor
