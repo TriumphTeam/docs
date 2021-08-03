@@ -30,11 +30,57 @@ paginatedGui.setItem(6, 7, ItemBuilder.from(Material.PAPER).setName("Next").asGu
 
 Kotlin test
 ```kt
-listening {
-    on<GithubPush> {
-        log { "Detected Github push." }
-        checkRepository()
+routing {
+
+    get<Api.Summary> { location ->
+        val summary = transaction {
+            val project = getProject(location.project) ?: return@transaction null
+
+            val entries = Entries.select {
+                Entries.project eq project[Projects.id]
+            }.orderBy(Entries.position).mapNotNull { mapEntry(it) }
+
+            SummaryData(entries)
+        } ?: run {
+            call.respond(HttpStatusCode.NotFound)
+            return@get
+        }
+
+        call.respond(summary)
+
     }
+
+    get<Api.Page> { location ->
+        val page = transaction {
+            getPage(location.project, location.page)?.get(Pages.content)
+        } ?: run {
+            call.respond(HttpStatusCode.NotFound)
+            return@get
+        }
+
+        call.respondText(page)
+    }
+
+    get<Api.Content> { location ->
+        val contentData = transaction {
+            val page = getPage(location.project, location.page) ?: return@transaction null
+
+            val entries = Contents.select {
+                Contents.page eq page[Pages.id]
+            }.orderBy(Contents.position)
+                .map {
+                    ContentEntry(it[Contents.literal], it[Contents.indent])
+                }
+
+            ContentData(page[Pages.github], entries)
+        } ?: run {
+            call.respond(HttpStatusCode.NotFound)
+            return@get
+        }
+
+        call.respond(contentData)
+    }
+
 }
 ```
 
