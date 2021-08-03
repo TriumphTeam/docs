@@ -32,7 +32,7 @@ Kotlin test
 ```kt
 routing {
 
-    post<Summary> { location ->
+    get<Api.Summary> { location ->
         val summary = transaction {
             val project = getProject(location.project) ?: return@transaction null
 
@@ -43,25 +43,25 @@ routing {
             SummaryData(entries)
         } ?: run {
             call.respond(HttpStatusCode.NotFound)
-            return@post
+            return@get
         }
 
         call.respond(summary)
 
     }
 
-    post<Api.Page> { location ->
+    get<Api.Page> { location ->
         val page = transaction {
             getPage(location.project, location.page)?.get(Pages.content)
         } ?: run {
             call.respond(HttpStatusCode.NotFound)
-            return@post
+            return@get
         }
 
         call.respondText(page)
     }
 
-    post<Api.Content> { location ->
+    get<Api.Content> { location ->
         val contentData = transaction {
             val page = getPage(location.project, location.page) ?: return@transaction null
 
@@ -75,7 +75,7 @@ routing {
             ContentData(page[Pages.github], entries)
         } ?: run {
             call.respond(HttpStatusCode.NotFound)
-            return@post
+            return@get
         }
 
         call.respond(contentData)
