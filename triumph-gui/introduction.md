@@ -30,7 +30,7 @@ paginatedGui.setItem(6, 7, ItemBuilder.from(Material.PAPER).setName("Next").asGu
 
 Ligatures test
 ```kt
--> <- => <= == === != !==       
+-> <- => <= >= >> << == === != !==       
 ```
 
 Kotlin test
