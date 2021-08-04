@@ -28,6 +28,11 @@ paginatedGui.setItem(6, 3, ItemBuilder.from(Material.PAPER).setName("Previous").
 paginatedGui.setItem(6, 7, ItemBuilder.from(Material.PAPER).setName("Next").asGuiItem(event -> paginatedGui.next()));
 ```
 
+Ligatures test
+```kt
+-> <- => <= == === != !==       
+```
+
 Kotlin test
 ```kt
 routing {
