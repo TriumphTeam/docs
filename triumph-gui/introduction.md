@@ -1,3 +1,5 @@
+![logo](https://i.imgur.com/pV6Fass.png)
+
 <center><h1>Triumph Gui</h1></center>
 
 ![example](https://i.imgur.com/nlTUxLa.gif)
