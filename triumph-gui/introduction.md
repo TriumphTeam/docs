@@ -1,6 +1,6 @@
 <center><h1>Triumph Gui</h1></center>
 
-![example](https://i.imgur.com/nlTUxLa.gif)
+<center>![example](https://i.imgur.com/nlTUxLa.gif)</center>
 
 # Features
 * Simple to use.
