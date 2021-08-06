@@ -2,8 +2,6 @@
 
 <center><h1>Triumph Gui</h1></center>
 
-![example](https://i.imgur.com/nlTUxLa.gif)
-
 # Features
 * Simple to use.
 * Per item action.
