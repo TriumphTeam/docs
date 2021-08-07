@@ -1,6 +1,6 @@
 <center><img src="https://i.imgur.com/pV6Fass.png"  alt="license"/></center>
 
-<center><h1 style="background-color: red; background-image: linear-gradient(138deg, #38ef7d, #11998e); background-size: 100%; background-repeat: repeat;-webkit-background-clip: text;-webkit-text-fill-color: transparent; -moz-background-clip: text; -moz-text-fill-color: transparent;">Triumph GUI</h1></center>
+<center><h1>Triumph GUI</h1></center>
 <center>
 <p>
   <img src="https://img.shields.io/github/license/TriumphTeam/triumph-gui?color=blue&style=flat-square"  alt="license"/>
