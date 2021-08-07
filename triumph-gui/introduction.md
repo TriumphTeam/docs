@@ -2,6 +2,8 @@
 
 <center><h1>Triumph Gui</h1></center>
 
+---
+
 # Features
 * Simple to use.
 * Per item action.
