@@ -31,21 +31,10 @@ CODE
 | :--- | :--- |
 | Content | Content |
 
-{% hint style="info" %}
-Hint
-{% endhint %}
-
-{% hint style="warning" %}
-Hint alert
-{% endhint %}
-
-{% hint style="danger" %}
-Hint important
-{% endhint %}
-
-{% hint style="success" %}
-Hint complete?
-{% endhint %}
+! This is an info message.
+!v This is a success message.
+!! Consider this a warning.
+!x This is an error message.
 
 {% tabs %}
 {% tab title="Tab" %}
