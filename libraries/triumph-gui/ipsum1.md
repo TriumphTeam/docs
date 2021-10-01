@@ -31,10 +31,10 @@ CODE
 | :--- | :--- |
 | Content | Content |
 
-! This is an info message.
-!v This is a success message.
-!! Consider this a warning.
-!x This is an error message.
+! This is an info message.  
+!v This is a success message.  
+!! Consider this a warning.  
+!x This is an error message.  
 
 {% tabs %}
 {% tab title="Tab" %}
