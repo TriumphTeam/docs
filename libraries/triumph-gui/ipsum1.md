@@ -31,18 +31,18 @@ CODE
 | :--- | :--- |
 | Content | Content |
 
-!!!
+!!!  
 This is an info message.
-!!!
-!!!v
+!!!  
+!!!v  
 This is a success message.  
-!!!
-!!!!
+!!!  
+!!!!  
 Consider this a warning.  
-!!!
-!!!x
+!!!  
+!!!x  
 This is an error message.  
-!!!
+!!!  
 
 Here down is still TODO!!
 
