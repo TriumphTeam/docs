@@ -34,6 +34,12 @@ CODE
 !!!  
 This is an info message.
 !!!  
+!!!  
+This is an info message.  
+This is an info message.  
+This is an info message.  
+This is an info message.  
+!!! 
 !!!v  
 This is a success message.  
 !!!  
