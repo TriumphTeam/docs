@@ -52,12 +52,8 @@ This is an error message.
 
 Here down is still TODO!!
 
-{% tabs %}
-{% tab title="Tab" %}
-
-{% endtab %}
-
-{% tab title="Tab Tab" %}
-Tab
-{% endtab %}
-{% endtabs %}
+-+-
++Tab name+
+Hello!
++++
+-+-
