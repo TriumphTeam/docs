@@ -30,6 +30,7 @@ CODE
 | Title | Title |
 | :--- | :--- |
 | Content | Content |
+| Content 2 | Content 2 |
 
 !!!  
 This is an info message.
