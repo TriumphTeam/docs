@@ -12,7 +12,7 @@ Supports links like https://google.com/ or links like `[Link!](https://google.co
 
 ### H3
 
-# Unordered lists:
+# Unordered lists
 ```md
 * LIST
 * LIST
@@ -21,7 +21,7 @@ Supports links like https://google.com/ or links like `[Link!](https://google.co
 * LIST
 * LIST
 
-# Ordered lists:
+# Ordered lists
 ```md
 1. LIST
 2. LIST
@@ -40,7 +40,7 @@ final String name = "My name";
 
 `CODE`
 
-# Quotes:
+# Quotes
 
 ```md
 > This is a quote!
@@ -84,7 +84,7 @@ This is the second tab!
 | Content | Content | Content |
 | Content 2 | Content 2 | Content 2 |
 
-# Info hint:
+# Info hint
 
 ```md
 !!!  
@@ -96,7 +96,7 @@ This is an info message.
 This is an info message.
 !!!
 
-# Success hint:
+# Success hint
 
 ```md
 !!!v  
@@ -108,7 +108,7 @@ This is a success message.
 This is a success message.  
 !!!
 
-# Warning hint:
+# Warning hint
 
 ```md
 !!!!  
@@ -120,7 +120,7 @@ Consider this a warning.
 Consider this a warning.  
 !!!
 
-# Error hind!
+# Error hint
 
 ```md
 !!!x  
