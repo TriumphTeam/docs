@@ -14,7 +14,7 @@ Supports links like https://google.com/ or links like `[Link!](https://google.co
 
 # Unordered lists
 ```md
-* LIST
+* LIST  
 * LIST
 ```
 
@@ -23,7 +23,7 @@ Supports links like https://google.com/ or links like `[Link!](https://google.co
 
 # Ordered lists
 ```md
-1. LIST
+1. LIST  
 2. LIST
 ```
 
