@@ -131,3 +131,11 @@ This is an error message.
 !!!x  
 This is an error message.  
 !!!
+
+# And a separator
+
+```md
+---
+```
+
+---
