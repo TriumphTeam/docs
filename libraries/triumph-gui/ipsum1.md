@@ -54,13 +54,13 @@ Here down is still TODO!!
 
 | Content | Content |
 
--+-  
-+Tab name+  
-Hello!  
-+++  
-+Tab number 2!+  
-Hello there 2!  
-+++  
+-+-
++Tab name+
+Hello!
++++
++Tab number 2!+
+Hello there 2!
++++
 -+-
 
 | Title | Title |
