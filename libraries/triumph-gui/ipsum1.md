@@ -62,3 +62,16 @@ Let's see if i can also add a tab inside the tab!
 *can't :ugh:*
 +++
 -+-
+
+-+-
++Tab name+
+This is **a** tab __with__ all sorts of different *content*!  
+!!!  
+It can even have a hint inside!  
+!!! 
++++
++Tab number 2!+
+Let's see if i can also add a tab inside the tab!  
+*can't :ugh:*
++++
+-+-
