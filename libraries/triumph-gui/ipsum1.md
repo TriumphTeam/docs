@@ -27,10 +27,10 @@ CODE
 
 
 
-| Title | Title |
-| :--- | :--- |
-| Content | Content |
-| Content 2 | Content 2 |
+| Title | Title 2 | Title 3 |
+| :--- | :--- | :--- |
+| Content | Content | Content |
+| Content 2 | Content 2 | Content 2 |
 
 !!!  
 This is an info message.
