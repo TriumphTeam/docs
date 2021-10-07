@@ -1,3 +1,5 @@
+Project version is `%version%`!!
+
 Supports links like https://google.com/ or links like `[Link!](https://google.com/)` -> [Link!](https://google.com/)
 
 # Headers `# h1`
