@@ -38,7 +38,7 @@
           "type": "ITEM",
           "literal": "Lorem ipsum",
           "destination": "ipsum2"
-        },
+        }
       ]
     }
   ]
