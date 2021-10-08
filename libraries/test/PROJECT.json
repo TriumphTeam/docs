@@ -1,0 +1,45 @@
+{
+  "options": {
+    "name": "test",
+    "color": [
+      "#000",
+      "#fff"
+    ],
+    "github": "ipsk/RunesKipp"
+  },
+  "summary": [
+    {
+      "type": "HEADER",
+      "literal": "Welcome"
+    },
+    {
+      "type": "LIST",
+      "children": [
+        {
+          "type": "ITEM",
+          "literal": "Introduction",
+          "destination": "introduction"
+        }
+      ]
+    },
+    {
+      "type": "HEADER",
+      "literal": "Lorem ipsum"
+    },
+    {
+      "type": "LIST",
+      "children": [
+        {
+          "type": "ITEM",
+          "literal": "Lorem ipsum",
+          "destination": "ipsum1"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Lorem ipsum",
+          "destination": "ipsum2"
+        },
+      ]
+    }
+  ]
+}
