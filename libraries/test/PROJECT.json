@@ -1,6 +1,8 @@
 {
   "options": {
+    "id": "test",
     "name": "test",
+    "icon": "none",
     "color": [
       "#000",
       "#fff"
