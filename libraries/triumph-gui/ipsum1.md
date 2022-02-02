@@ -46,7 +46,7 @@ when ("this") {
   else -> idk()
 }
 
-val test = variable infix another
+val test = variable inf another
 ```
 
 # Single code line
