@@ -27,7 +27,7 @@ dependencies {
     implementation "dev.triumphteam:triumph-cmds-{platform}:{version}" // Replace version here 
 }
 ```
-In order to include the lib in your project, you need to add `shadow` plugin `build.gradle`.
+In order to include the lib in your project, you need to add `shadow` plugin `build.gradle`.  
 Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.plugin`.
 ```groovy
 // This goes on the top of the build script.
@@ -52,7 +52,7 @@ dependencies {
     implementation("dev.triumphteam:triumph-cmds-{platform}:{version}") // Replace version here 
 }
 ```
-In order to include the lib in your project, you need to add `shadow` plugin `build.gradle.kts`.
+In order to include the lib in your project, you need to add `shadow` plugin `build.gradle.kts`.  
 Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.plugin`.
 ```groovy
 // This goes on the top of the build script.
@@ -82,7 +82,7 @@ You need to add the dependency to your `pom.xml`.
     <version>{version}</version> <!-- replace version here -->
 </dependency>
 ```
-In order to include the framework in your project, you need the shade plugin.
+In order to include the framework in your project, you need the shade plugin.  
 Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.plugin`.
 ```xml
 <plugin>
