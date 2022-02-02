@@ -16,6 +16,31 @@ Make sure to replace `{platform}` with one of the following:
 * `jda-slash` - For JDA slash commands.
 
 -+-
++Gradle (Kotlin)+
+You need to add the dependency to your `build.gradle.kts`.
+```kotlin
+repositories {
+    maven("https://repo.triumphteam.dev/snapshots/")
+}
+
+dependencies {
+    implementation("dev.triumphteam:triumph-cmds-{platform}:{version}") // Replace version here 
+}
+```
+In order to include the lib in your project, you need to add `shadow` plugin `build.gradle.kts`.  
+Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.plugin`.
+```kotlin
+// This goes on the top of the build script.
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.0.0"
+}
+
+// This can go anywhere.
+shadowJar {
+   relocate("dev.triumphteam.cmd", "[YOUR PACKAGE].cmd")
+}
+```
++++
 +Gradle (Groovy)+
 You need to add the dependency to your `build.gradle`.
 ```groovy
@@ -33,31 +58,6 @@ Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.pl
 // This goes on the top of the build script.
 plugins {
     id "com.github.johnrengelman.shadow" version "7.0.0"
-}
-
-// This can go anywhere.
-shadowJar {
-   relocate("dev.triumphteam.cmd", "[YOUR PACKAGE].cmd")
-}
-```
-+++
-+Gradle (Kotlin)+
-You need to add the dependency to your `build.gradle.kts`.
-```groovy
-repositories {
-    maven("https://repo.triumphteam.dev/snapshots/")
-}
-
-dependencies {
-    implementation("dev.triumphteam:triumph-cmds-{platform}:{version}") // Replace version here 
-}
-```
-In order to include the lib in your project, you need to add `shadow` plugin `build.gradle.kts`.  
-Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.plugin`.
-```groovy
-// This goes on the top of the build script.
-plugins {
-    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 // This can go anywhere.
