@@ -1,4 +1,4 @@
-<center><img src="https://i.imgur.com/HL9BQOY.png"  alt="header"/></center>
+<center><img src="https://i.imgur.com/RsYXETD.png"  alt="header"/></center>
 
 <center><h1>Triumph CMDs</h1></center>
 <center>
@@ -12,21 +12,15 @@
 ---
 
 # Features
-* Simple to use.
-* Per item action.
-* Slot specific actions.
-* Close and Open actions.
-* Pagination GUI.
-* Scrolling GUI.
-* Item Builder.
+
 
 # Contributing
-Contributions, issues and feature requests are welcome!
-Feel free to check [issues page](https://github.com/TriumphTeam/triumph-gui/issues).
+Contributions, issues, and feature requests are welcome!
+Feel free to check [issues page](https://github.com/TriumphTeam/triumph-cmds/issues).
 
 # Show your support
-Give a star on [GitHub](https://github.com/TriumphTeam/triumph-gui) if this project helped you!
+Give a star on [GitHub](https://github.com/TriumphTeam/triumph-cmds) if this project helped you!
 
 # License
-Copyright © 2021 [TriumphTeam](https://github.com/TriumphTeam).
-This project is [MIT](https://github.com/TriumphTeam/triumph-gui/blob/master/LICENSE) licensed.
+Copyright © 2022 [TriumphTeam](https://github.com/TriumphTeam).
+This project is [MIT](https://github.com/TriumphTeam/triumph-cmds/blob/master/LICENSE) licensed.
