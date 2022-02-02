@@ -33,6 +33,11 @@
           "type": "ITEM",
           "literal": "Setup",
           "destination": "setup"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Command Manager",
+          "destination": "command-manager"
         }
       ]
     }
