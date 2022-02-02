@@ -36,6 +36,15 @@ Supports links like https://google.com/ or links like `[Link!](https://google.co
 
 ```java
 final String name = "My name";
+name.split("test");
+```
+
+```kt
+val this = is.cool(Right)
+when ("this") {
+  "works" -> well()
+  else -> idk()
+}
 ```
 
 # Single code line
