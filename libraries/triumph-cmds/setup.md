@@ -6,7 +6,7 @@
 ---
 
 # Version
-Make sure to replace `{version}` with the latest versions (`%version%`).
+Make sure to replace `{version}` with the latest version (`%version%`).
 
 # Platform
 Make sure to replace `{platform}` with one of the following:
