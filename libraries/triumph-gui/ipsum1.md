@@ -40,11 +40,13 @@ name.split("test");
 ```
 
 ```kt
-val this = is.cool(Right)
+val test = is.cool(Right)
 when ("this") {
   "works" -> well()
   else -> idk()
 }
+
+val test = variable infix another
 ```
 
 # Single code line
