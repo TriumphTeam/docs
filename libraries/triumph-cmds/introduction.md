@@ -1,4 +1,4 @@
-<center><img src="https://i.imgur.com/1jtCrml.png"  alt="header"/></center>
+<center><img src="https://i.imgur.com/D2U3uTT.png"  alt="header"/></center>
 
 <center><h1>Triumph CMDs</h1></center>
 <center>
