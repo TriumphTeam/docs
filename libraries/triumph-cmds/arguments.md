@@ -1,67 +1,90 @@
-<center><h1>Commands</h1></center>
+<center><h1>Arguments</h1></center>
 <center>
-<p>The basic structure of a command and it's sub commands.</p>
+<p>Command arugment declaration and options.</p>
 </center>
 
 ---
 
-# Creating a simple command
-Every command must extend `BaseCommand`.  
-You can use the `@Command` annotation to declare the command name and alias.
+# Concept
+The concept of arguments in the library are based on parameters, each parameter declared in the method will be a command argument.
+
+# Sender
+The first parameter of the command method **must** always be a sender. You can read more about the sender [here](/).
+
+# Creating a command with arguments
+Let's create the following command `/give item diamond 5`. Where `give` is the command, `item` is the sub command, `diamond` is an argument of type `Material` and `5` is the amound or an `int`.
 ```java
-@Command("foo")
-class MyCommand extends BaseCommand {}
-```
-A command can also have aliases.
-```java
-@Command(value = "foo", alias = {"bar", "baz"})
-class MyCommand extends BaseCommand {}
-```
-Alternatively you can also declare the command name and alias through the `BaseCommand`'s constructor.
-```java
-class MyCommand extends BaseCommand {
-    
-    public MyCommand() {
-        super("foo", Arrays.asList("bar", "baz"));
+@Command("give")
+class MyClass extends BaseCommand {
+
+    @SubCommand("item")
+    public void execute(Sender sender, Material material, int amount) {
+        sender.sendMessage("The selected material was: " + material); // Will send "diamond"
+        sender.sendMessage("The amount was: " + amount); // Will send "5"
     }
 }
 ```
-!!!!
-The usage of the keyword `Sender` in the following examples are **not** the correct name, it just represents a sender.  
-As the real sender name can change based on platform or the provided custom sender.
-!!!
+It is as simple as that to have arguments for your command.
 
-# Sub commands
-Each sub commands are declared by methods, currently there is no other way to declare it's name and alias other than through annotations.
+# Simple arguments
+By default the library adds many argument types.
 
-## Default
-A `@Default` method is a "sub command without a name", implying it is the main executor of a command that has no sub commands.  
-For example the command `/foo` would be declared in the following way:
+**Common:**
+* `short`/`Short`
+* `int`/`Integer`
+* `long`/`Long`
+* `float`/`Float`
+* `double`/`Double`
+* `boolean`/`Boolean`
+* `String`
+* `Enums` - Any type of enums, for example `Material`.
+
+Aditionally each platform also adds a few default types.
+
+**Bukkit**
+* `Material` - Overriden from normal enums to use `matchMaterial` instead of `valueOf`.
+* `Player`
+* `World`
+
+**JDA**
+* `User`
+* `Member`
+* `TextChannel`
+* `VoiceChannel`
+* `Role`
+
+# Complex arguments
+By default other more complex aguments are also allowed, for example `Collections`, like `List` or `Set`.  
+
+## Collections
+Collections are also type safe, meaning if you do `List<Integer>` that means any argument that is *not* a number will be `null`, for example:  
+`/foo bar 1 2 3 hello 4 5` -> `[1, 2, 3, null, 4, 5]`.  
+Collectiosn by default are **only** allowed as the last arguement, for example:
 ```java
-@Command("foo")
-class MyCommand extends BaseCommand {
+void execute(Sender sender, int number, List<String> args);
+```
+With one exception being a split argument.
 
-    @Default
-    public void executor(Sender sender) {
-        // Code to be executed
-    }
+### Split argument
+A split argument is a collection that is annotated by `@Split`, example:  
+Given the command `/foo bar diamond,iron_ingot,stone,grass_block 5`, can be declared as:  
+```java
+void execute(Sender sender, @Split(",") List<Material> materials, int amount) {
+    println(materials); // Would print [DIAMOND, IRON_INGOT, STONE, GRASS_BLOCK]
 }
 ```
 
-## SubCommand
-A `@SubCommand` is a sub command that has a specific name. For example `/foo bar`
+### Join argument
+The same way you can split a string into a collection, you can also join a list of arguments into a single string.  
+This however can only be used as the last argument of the command. 
+Command example: `/foo bar 5 hello there people`.
 ```java
-@Command("foo")
-class MyCommand extends BaseCommand {
-
-    @SubCommand("bar")
-    public void executor(Sender sender) {
-        // Code to be executed
-    }
+void excecute(Sender sender, int number, @Join(", ") String message) {
+    println(message); // Would print "hello, there, people"
 }
 ```
 
-## Alias
-Both annotations also support an alias to be passed:  
-`@Default(alias = {"bar"})` would be executed as either `/foo` or `/foo bar`.  
-`@SubCommand(value = "bar", alias = {"baz"})` would be executed as either `/foo bar` or `/foo baz`.
+## Flags
+I've decided to dedicate an entire page explaining Flags instead, which you can find [here](/).
+
+
