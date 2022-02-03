@@ -1,10 +1,7 @@
 {
   "options": {
     "name": "Triumph GUI",
-    "color": [
-      "#45ea65",
-      "#fa84e6"
-    ],
+    "color": ["#45ea65", "#fa84e6"],
     "github": "TriumphTeam/triumph-gui"
   },
   "summary": [
@@ -24,20 +21,58 @@
     },
     {
       "type": "HEADER",
-      "literal": "Lorem ipsum"
+      "literal": "Getting Started"
     },
     {
       "type": "LIST",
       "children": [
         {
           "type": "ITEM",
-          "literal": "Lorem ipsum",
-          "destination": "ipsum1"
+          "literal": "Setup",
+          "destination": "setup"
+        }
+      ]
+    },
+    {
+      "type": "HEADER",
+      "literal": "Types"
+    },
+    {
+      "type": "LIST",
+      "children": [
+        {
+          "type": "ITEM",
+          "literal": "GUI",
+          "destination": "gui"
         },
         {
           "type": "ITEM",
-          "literal": "Lorem ipsum",
-          "destination": "ipsum2"
+          "literal": "PaginatedGUI",
+          "destination": "pagegui"
+        },
+        {
+          "type": "ITEM",
+          "literal": "ScrollingGUI",
+          "destination": "scrollgui"
+        },
+        {
+          "type": "ITEM",
+          "literal": "StorageGUI",
+          "destination": "storagegui"
+        }
+      ]
+    },
+    {
+      "type": "HEADER",
+      "literal": "Additional Options"
+    },
+    {
+      "type": "LIST",
+      "children": [
+        {
+          "type": "ITEM",
+          "literal": "GUI Features",
+          "destination": "features"
         }
       ]
     }
