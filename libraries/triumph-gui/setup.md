@@ -9,7 +9,7 @@ You need to add the dependency to your `build.gradle`.
 
 ```groovy
 repositories {
-    maven { url = "https://https://repo.triumphteam.dev/snapshots/" }
+    maven { url = "https://repo.triumphteam.dev/snapshots/" }
 }
 
 dependencies {
@@ -36,7 +36,7 @@ You need to add the dependency to your `build.gradle.kts`.
 
 ```kotlin
 repositories {
-    maven { url = uri("https://https://repo.triumphteam.dev/snapshots/") }
+    maven { url = uri("https://repo.triumphteam.dev/snapshots/") }
 }
 
 dependencies {
@@ -65,7 +65,7 @@ You need to add the dependency to your pom.xml.
 <repositories>
     <repository>
         <id>repo</id>
-        <url>https://https://repo.triumphteam.dev/snapshots/</url>
+        <url>https://repo.triumphteam.dev/snapshots/</url>
     </repository>
 </repositories>
 
