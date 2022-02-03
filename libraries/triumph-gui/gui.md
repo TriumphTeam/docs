@@ -8,7 +8,7 @@
 ![](./assets/screenshot_8.png)
 
 
-### Creating a GUI
+# Creating a GUI
 
 To create a GUI all you need to do is:
 
@@ -19,7 +19,7 @@ Gui gui = Gui.gui()
         .create();
 ```
 
-### Creating a Typed GUI
+# Creating a Typed GUI
 
 ```java
 Gui gui = Gui.gui()
@@ -38,7 +38,7 @@ If the type is not specified, it'll fallback to `GuiType.CHEST`.
 * DISPENSER - 0 to 8 slots
 * BREWING - 0 to 4 slots
 
-### Creating a GUI item
+# Creating a GUI item
 
 Each item added to the GUI need to be a `GuiItem`.
 
@@ -53,7 +53,7 @@ GuiItem guiItem = ItemBuilder.from(Material.STONE).asGuiItem(event -> {
 Each GUI item needs an item stack, the click action is optional.  
 The action for an item is simply the `InventoryClickEvent` so handle it like you would be doing in your own listener.
 
-### Adding the item to the GUI
+# Adding the item to the GUI
 
 Now that we have our `GuiItem`, we can easily add it to the GUI.
 
@@ -72,7 +72,7 @@ What option you choose is up to you.
 
 **Attention:** if you specify a slot that exceeds the GUI limit it'll throw a `GuiException`.
 
-### Opening the GUI
+# Opening the GUI
 
 To open the GUI to the player you just need to call the method `open`.
 
