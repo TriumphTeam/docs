@@ -8,7 +8,7 @@
 
 ![](./assets/ezgif-6-be4759200973.gif)
 
-### Creating a Scrolling GUI
+# Creating a Scrolling GUI
 
 To create a Scrolling GUI its pretty straight forward:
 

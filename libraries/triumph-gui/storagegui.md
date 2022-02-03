@@ -11,7 +11,7 @@ Attention! Items stored inside this GUI will not Persist on Server Restart.
 
 ![](./assets/ezgif-6-0f0b0eb384f3.gif)
 
-### Creating a Persistent GUI
+# Creating a Persistent GUI
 
 To create a persistent GUI all you need to do is:
 
@@ -24,6 +24,6 @@ StorageGui gui = Gui.storage()
 
 Just like the normal [GUI](gui.md) the first parameter is the rows the GUI should have.
 
-### Adding the item to the GUI
+# Adding the item to the GUI
 
 Differently to the normal [GUI](gui.md), the `addItem` method takes an `ItemStack` instead. Any `GuiItem` added will have actions applied to it, the persistent items are simple ItemStacks that have nothing associated to it.
