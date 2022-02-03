@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-    implementation("dev.triumphteam:triumph-cmds-{platform}:{version}") // Replace version here 
+    implementation("dev.triumphteam:triumph-cmd-{platform}:{version}") // Replace version here 
 }
 ```
 In order to include the lib in your project, you need to add `shadow` plugin `build.gradle.kts`.  
@@ -49,7 +49,7 @@ repositories {
 }
 
 dependencies {
-    implementation "dev.triumphteam:triumph-cmds-{platform}:{version}" // Replace version here 
+    implementation "dev.triumphteam:triumph-cmd-{platform}:{version}" // Replace version here 
 }
 ```
 In order to include the lib in your project, you need to add `shadow` plugin `build.gradle`.  
