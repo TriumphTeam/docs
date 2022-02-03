@@ -72,7 +72,7 @@ You need to add the dependency to your pom.xml.
 <dependency>
     <groupId>dev.triumphteam</groupId>
     <artifactId>triumph-gui</artifactId>
-    <version>{version}</version> <!-- replace version here -->
+    <version>%version%</version>
 </dependency>
 ```
 
