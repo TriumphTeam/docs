@@ -9,7 +9,7 @@ You need to add the dependency to your `build.gradle`.
 
 ```groovy
 repositories {
-    maven { url = "https://repo.triumphteam.dev/snapshots/" }
+    mavenCentral()
 }
 
 dependencies {
@@ -36,7 +36,7 @@ You need to add the dependency to your `build.gradle.kts`.
 
 ```kotlin
 repositories {
-    maven { url = uri("https://repo.triumphteam.dev/snapshots/") }
+    mavenCentral()
 }
 
 dependencies {
@@ -62,13 +62,6 @@ shadowJar {
 You need to add the dependency to your pom.xml.
 
 ```markup
-<repositories>
-    <repository>
-        <id>repo</id>
-        <url>https://repo.triumphteam.dev/snapshots/</url>
-    </repository>
-</repositories>
-
 <dependency>
     <groupId>dev.triumphteam</groupId>
     <artifactId>triumph-gui</artifactId>
