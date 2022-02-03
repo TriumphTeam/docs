@@ -1,23 +1,67 @@
-<center><h1>Command Manager</h1></center>
+<center><h1>Commands</h1></center>
 <center>
-<p>The basic entry for everything related to your commands.</p>
+<p>The basic structure of a command and it's sub commands.</p>
 </center>
 
 ---
 
-# Creating a command manager
-Each platform has it's own command manager and each manager has it's own sender type.
+# Creating a simple command
+Every command must extend `BaseCommand`.  
+You can use the `@Command` annotation to declare the command name and alias.
 ```java
-// Bukkit
-BukkitCommandManager<CommandSender> manager = BukkitCommandManager.create(plugin);
-
-// JDA Prefixed
-PrefixedCommandManager<PrefixedSender> manager = PrefixedCommandManager.create(jda);
-
-// JDA slash
-SlashCommandManager<SlashSender> manager = SlashCommandManager.create(jda);
+@Command("foo")
+class MyCommand extends BaseCommand {}
 ```
-The type parameter for the sender is necessary because you can also specify your own sender type by passing a custom `SenderMapper`. You can read more about it [here](/).  
+A command can also have aliases.
+```java
+@Command(value = "foo", alias = {"bar", "baz"})
+class MyCommand extends BaseCommand {}
+```
+Alternatively you can also declare the command name and alias through the `BaseCommand`'s constructor.
+```java
+class MyCommand extends BaseCommand {
+    
+    public MyCommand() {
+        super("foo", Arrays.asList("bar", "baz"));
+    }
+}
+```
+!!!
+The usage of the keyword `Sender` in the following examples are **not** the correct name, it just represents a sender.  
+As the real sender name can change based on platform or the provided custom sender.
+!!!
 
-# Usage
-The command manager is used for doing everything for the commands, registering commands, messages, arguments, etc.
+# Sub commands
+Each sub commands are declared by methods, currently there is no other way to declare it's name and alias other than through annotations.
+
+## Default
+A `@Default` method is a "sub command without a name", implying it is the main executor of a command that has no sub commands.  
+For example the command `/foo` would be declared in the following way:
+```java
+@Command("foo")
+class MyCommand extends BaseCommand {
+
+    @Default
+    public void executor(Sender sender) {
+        // Code to be executed
+    }
+}
+```
+
+## SubCommand
+A `@SubCommand` is a sub command that has a specific name. For example `/foo bar`
+```java
+@Command("foo")
+class MyCommand extends BaseCommand {
+
+    @SubCommand("bar")
+    public void executor(Sender sender) {
+        // Code to be executed
+    }
+}
+```
+
+## Alias
+Both annotations also support an alias to be passed:  
+`@Default(alias = {"bar"})` would be executed as either `/foo` or `/foo bar`.  
+`@SubCommand(value = "bar", alias = {"baz"})` would be executed as either `/foo bar` or `/foo baz`.
