@@ -65,12 +65,3 @@ class MyCommand extends BaseCommand {
 Both annotations also support an alias to be passed:  
 `@Default(alias = {"bar"})` would be executed as either `/foo` or `/foo bar`.  
 `@SubCommand(value = "bar", alias = {"baz"})` would be executed as either `/foo bar` or `/foo baz`.
-
-# Registering
-Registering the command is very simple, you simply do:
-```java
-commandManager.register(new MyCommand());
-```
-
-# Good practices
-Visit [this](/) page to see good practices about writting and organizing the commands.
