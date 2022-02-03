@@ -26,7 +26,7 @@ class MyCommand extends BaseCommand {
     }
 }
 ```
-!!!
+!!!!
 The usage of the keyword `Sender` in the following examples are **not** the correct name, it just represents a sender.  
 As the real sender name can change based on platform or the provided custom sender.
 !!!
