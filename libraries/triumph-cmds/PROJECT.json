@@ -38,6 +38,11 @@
           "type": "ITEM",
           "literal": "Command Manager",
           "destination": "command-manager"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Commands",
+          "destination": "commands"
         }
       ]
     }
