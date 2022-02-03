@@ -76,7 +76,7 @@ void execute(Sender sender, @Split(",") List<Material> materials, int amount) {
 
 ### Join argument
 The same way you can split a string into a collection, you can also join a list of arguments into a single string.  
-This however can only be used as the last argument of the command. 
+This however can only be used as the last argument of the command.  
 Command example: `/foo bar 5 hello there people`.
 ```java
 void excecute(Sender sender, int number, @Join(", ") String message) {
