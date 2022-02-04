@@ -38,6 +38,11 @@
           "type": "ITEM",
           "literal": "Command Manager",
           "destination": "command-manager"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Commands",
+          "destination": "commands"
         }
       ]
     },
@@ -50,14 +55,38 @@
       "children": [
         {
           "type": "ITEM",
-          "literal": "Commands",
-          "destination": "commands"
-        },
-        {
-          "type": "ITEM",
           "literal": "Arguments",
           "destination": "arguments"
         },
+        {
+          "type": "ITEM",
+          "literal": "Simple Arguments",
+          "destination": "simple-arguments"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Complex Arguments",
+          "destination": "complex-arguments"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Flags",
+          "destination": "flags"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Messages",
+          "destination": "messages"
+        }
+      ]
+    },
+    {
+      "type": "HEADER",
+      "literal": "Other (idk what to name yet)"
+    },
+    {
+      "type": "LIST",
+      "children": [
         {
           "type": "ITEM",
           "literal": "Messages",
