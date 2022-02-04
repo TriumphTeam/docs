@@ -38,7 +38,16 @@
           "type": "ITEM",
           "literal": "Command Manager",
           "destination": "command-manager"
-        },
+        }
+      ]
+    },
+    {
+      "type": "HEADER",
+      "literal": "Arguments"
+    },
+    {
+      "type": "LIST",
+      "children": [
         {
           "type": "ITEM",
           "literal": "Commands",
