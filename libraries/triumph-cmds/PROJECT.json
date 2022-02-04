@@ -72,11 +72,6 @@
           "type": "ITEM",
           "literal": "Flags",
           "destination": "flags"
-        },
-        {
-          "type": "ITEM",
-          "literal": "Messages",
-          "destination": "messages"
         }
       ]
     },
