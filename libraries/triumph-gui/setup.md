@@ -4,33 +4,6 @@
 </center>
 
 -+-
-+Gradle+
-You need to add the dependency to your `build.gradle`.
-
-```groovy
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation "dev.triumphteam:triumph-gui:%version%"
-}
-```
-
- In order to include the lib in your project, you need to add `shadowJar` plugin `build.gradle`.  
- Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plugin`.
-
-```groovy
-plugins {
-    id "com.github.johnrengelman.shadow" version "7.1.1"
-}
-
-shadowJar {
-   relocate("dev.triumphteam.gui", "[YOUR PACKAGE].gui")
-}
-```
-+++
-
 +Gradle (Kotlin)+
 You need to add the dependency to your `build.gradle.kts`.
 
@@ -58,10 +31,37 @@ shadowJar {
 ```
 +++
 
++Gradle (Groovy)+
+You need to add the dependency to your `build.gradle`.
+
+```groovy
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "dev.triumphteam:triumph-gui:%version%"
+}
+```
+
+ In order to include the lib in your project, you need to add `shadowJar` plugin `build.gradle`.  
+ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plugin`.
+
+```groovy
+plugins {
+    id "com.github.johnrengelman.shadow" version "7.1.1"
+}
+
+shadowJar {
+   relocate("dev.triumphteam.gui", "[YOUR PACKAGE].gui")
+}
+```
++++
+
 +Maven+
 You need to add the dependency to your pom.xml.
 
-```markup
+```xml
 <dependency>
     <groupId>dev.triumphteam</groupId>
     <artifactId>triumph-gui</artifactId>

@@ -19,7 +19,7 @@ class MyClass extends BaseCommand {
 
     @SubCommand("item")
     public void execute(Sender sender, Material material, int amount) {
-        sender.sendMessage("The selected material was: " + material); // Will send "diamond"
+        sender.sendMessage("The selected material was: " + material); // Will send "DIAMOND"
         sender.sendMessage("The amount was: " + amount); // Will send "5"
     }
 }

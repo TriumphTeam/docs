@@ -1,0 +1,26 @@
+{
+  "options": {
+    "name": "Triumph Core",
+    "color": [
+      "#5D3D90",
+      "#A157BE"
+    ],
+    "github": "TriumphTeam/triumph-core"
+  },
+  "summary": [
+    {
+      "type": "HEADER",
+      "literal": "Welcome"
+    },
+    {
+      "type": "LIST",
+      "children": [
+        {
+          "type": "ITEM",
+          "literal": "Introduction",
+          "destination": "introduction"
+        }
+      ]
+    }
+  ]
+}
