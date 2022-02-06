@@ -21,6 +21,39 @@
           "destination": "introduction"
         }
       ]
+    },
+    {
+      "type": "HEADER",
+      "literal": "Getting Started"
+    },
+    {
+      "type": "LIST",
+      "children": [
+        {
+          "type": "ITEM",
+          "literal": "Setup",
+          "destination": "setup"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Core",
+          "destination": "core"
+        }
+      ]
+    },
+    {
+      "type": "HEADER",
+      "literal": "Features - Bukkit"
+    },
+    {
+      "type": "LIST",
+      "children": [
+        {
+          "type": "ITEM",
+          "literal": "Commands",
+          "destination": "feature-bukkit-commands"
+        }
+      ]
     }
   ]
 }

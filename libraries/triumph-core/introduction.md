@@ -1,4 +1,4 @@
-<center><img src="https://i.imgur.com/k9bHSVi.png"  alt="header"/></center>
+<center><img src="https://i.imgur.com/n56pH6F.png"  alt="header"/></center>
 
 <center><h1>Triumph CORE</h1></center>
 <center>
