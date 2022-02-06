@@ -5,6 +5,32 @@
 
 ---
 
+# Dependency
+-+-
++Gradle (Kotlin)+
+```kotlin
+dependencies {
+    implementation("dev.triumphteam:triumph-core-feature-bukkit-commands:%version%") // Replace version here 
+}
+```
++++
++Gradle (Groovy)+
+```groovy
+dependencies {
+    implementation "dev.triumphteam:triumph-core-feature-bukkit-commands:%version%"" // Replace version here 
+}
+```
++++
++Maven+
+```xml
+<dependency>
+    <groupId>dev.triumphteam</groupId>
+    <artifactId>triumph-core-feature-bukkit-commands</artifactId>
+    <version>%version%</version> <!-- replace version here -->
+</dependency>
++++
+-+-
+
 # Creating the commands feature
 For now let's just use the default `CommandSender` for bukkit, but this feature allows you to use custom ones.  
 This is useful because you can completely abstract the code to work on multiple platforms without much change if any at all.
@@ -29,8 +55,8 @@ Now that the feature is created, you can either install it with `install(MyComma
 override fun onEnable() {
     commands(MyCommands) {
         // Registering a suggestion
-        suggestion(SuggestionKey.of("example")) { listOf("example1", "example2", "example3")}
-
+        suggestion(SuggestionKey.of("example")) { sender, context -> listOf("example1", "example2", "example3") }
+            
         // Registering an argument
         argument<Material> { sender, arg -> Material.matchMaterial(arg) }
 

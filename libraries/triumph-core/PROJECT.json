@@ -31,6 +31,11 @@
       "children": [
         {
           "type": "ITEM",
+          "literal": "Setup",
+          "destination": "setup"
+        },
+        {
+          "type": "ITEM",
           "literal": "Core",
           "destination": "core"
         }
