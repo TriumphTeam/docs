@@ -69,7 +69,7 @@ Both annotations also support an alias to be passed:
 # Registering
 Registering the command is very simple, you simply do:
 ```java
-commandManager.register(new MyCommand());
+commandManager.registerCommand(new MyCommand());
 ```
 
 # Good practices
