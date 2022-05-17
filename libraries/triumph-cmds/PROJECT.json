@@ -43,6 +43,11 @@
           "type": "ITEM",
           "literal": "Commands",
           "destination": "commands"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Custom Senders",
+          "destination": "custom-senders"
         }
       ]
     },
