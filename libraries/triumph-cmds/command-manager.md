@@ -17,7 +17,7 @@ PrefixedCommandManager<PrefixedSender> manager = PrefixedCommandManager.create(j
 // JDA slash
 SlashCommandManager<SlashSender> manager = SlashCommandManager.create(jda);
 ```
-The type parameter for the sender is necessary because you can also specify your own sender type by passing a custom `SenderMapper`. You can read more about it [here](/).  
+The type parameter for the sender is necessary because you can also specify your own sender type by passing a custom `SenderMapper`. You can read more about it [here](/library/triumph-cmds/custom-senders).  
 
 # Usage
 The command manager is used for doing everything for the commands, registering commands, messages, arguments, etc.
