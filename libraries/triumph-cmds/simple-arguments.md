@@ -5,10 +5,9 @@
 
 ---
 
-# Simple arguments
 By default the library adds many argument types.
 
-**Common:**
+# Common:
 * `short`/`Short`
 * `int`/`Integer`
 * `long`/`Long`
@@ -20,12 +19,12 @@ By default the library adds many argument types.
 
 Aditionally each platform also adds a few default types.
 
-**Bukkit**
+# Bukkit:
 * `Material` - Overriden from normal enums to use `matchMaterial` instead of `valueOf`.
 * `Player`
 * `World`
 
-**JDA**
+# JDA:
 * `User`
 * `Member`
 * `TextChannel`
