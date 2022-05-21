@@ -32,7 +32,7 @@ As the real sender name can change based on platform or the provided custom send
 !!!
 
 # Sub commands
-Each sub commands are declared by methods, currently there is no other way to declare it's name and alias other than through annotations.
+Each sub commands are declared by methods, currently there is no other way to declare its name and alias other than through annotations.
 
 ## Default
 A `@Default` method is a "sub command without a name", implying it is the main executor of a command that has no sub commands.  

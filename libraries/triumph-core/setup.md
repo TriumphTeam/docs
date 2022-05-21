@@ -92,7 +92,7 @@ Replace `[YOUR PACKAGE]` with your package, for example `me.myplugin.plugin`.
         <relocations>
             <relocation>
                 <pattern>dev.triumphteam.core</pattern>
-                <shadedPattern>[YOUR PACKAGE].core</shadedPattern> <!-- Replace package here here -->
+                <shadedPattern>[YOUR PACKAGE].core</shadedPattern> <!-- Replace package here -->
             </relocation>
         </relocations>
     </configuration>

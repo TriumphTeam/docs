@@ -93,7 +93,7 @@ Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.pl
         <relocations>
             <relocation>
                 <pattern>dev.triumphteam.cmd</pattern>
-                <shadedPattern>[YOUR PACKAGE].cmd</shadedPattern> <!-- Replace package here here -->
+                <shadedPattern>[YOUR PACKAGE].cmd</shadedPattern> <!-- Replace package here -->
             </relocation>
         </relocations>
     </configuration>
