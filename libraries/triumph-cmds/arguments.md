@@ -25,3 +25,14 @@ class MyClass extends BaseCommand {
 }
 ```
 It is as simple as that to have arguments for your command.
+
+## @ArgName Annotation
+The `@ArgName` annotation is used to define the name of the argument should you not want the name of the argument
+to be the same as the name of the parameter.
+```java
+@SubCommand("id")
+public void execute(Sender sender, @ArgName("username") Player target) {
+    sender.sendMessage(target.getName() + " has the id: " + target.getUniqueId());
+}
+```
+In this case, the argument will be called `username` instead of the parameter name, `target`.
