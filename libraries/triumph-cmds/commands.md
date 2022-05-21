@@ -1,6 +1,6 @@
 <center><h1>Commands</h1></center>
 <center>
-<p>The basic structure of a command, and it's sub commands.</p>
+<p>The basic structure of a command, and its sub commands.</p>
 </center>
 
 ---
