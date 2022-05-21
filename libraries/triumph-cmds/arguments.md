@@ -26,9 +26,12 @@ class MyClass extends BaseCommand {
 ```
 It is as simple as that to have arguments for your command.
 
-## Argument Name Annotation
+## Argument Names
+By default, argument names will be defined as the name of the parameter.
+
 The `@ArgName` annotation is used to define the name of the argument should you not want the name of the argument
-to be the same as the name of the parameter.
+to be the same as the name of the parameter. If you would like to use the parameter name as the 
+argument name, you can use the `-parameters` compiler flag when compiling your plugin.
 ```java
 @SubCommand("id")
 public void execute(Sender sender, @ArgName("username") Player target) {
@@ -36,5 +39,3 @@ public void execute(Sender sender, @ArgName("username") Player target) {
 }
 ```
 In this case, the argument will be called `username` instead of the parameter name, `target`.
-
-If you would like to use the parameter name as the argument name, you can use the `-parameters` compiler flag when compiling your plugin.
