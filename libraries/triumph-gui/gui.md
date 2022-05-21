@@ -28,7 +28,7 @@ Gui gui = Gui.gui()
         .create();
 ```
 
-If the type is not specified, it'll fallback to `GuiType.CHEST`.
+If the type is not specified, it'll fall back to `GuiType.CHEST`.
 
 **Current supported GUI types:**
 

@@ -23,14 +23,14 @@ public class MySenderValidator implements SenderValidator<MySender> {
 
     @Override
     public boolean validate(final @NotNull MessageRegistry<MySender> messageRegistry, final @NotNull SubCommand<MySender> subCommand, final @NotNull MySender sender) {
-        // Do any checks you want here, for example on Bukkit, this is where it checks if the subcommand is console only, or player only, etc
+        // Do any checks you want here, for example on Bukkit, this is where it checks if the subcommand is console only, or player only, etc.
         // Return true if valid, false, if not, use the message registry to send messages to the player if you want
         return false;
     }
 }
 ```
 Now you can either make a custom SenderMapper or just use lambda.
-If you're not using lambda, then make sure you speccify the correct senders. If you're using lambda it will be a little bit easier.
+If you're not using lambda, then make sure you specify the correct senders. If you're using lambda it will be a little easier.
 ```java
 class MyMapper implements SenderMapper<CommandSender, MySender>
 ```

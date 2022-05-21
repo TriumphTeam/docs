@@ -1,17 +1,17 @@
 <center><h1>Arguments</h1></center>
 <center>
-<p>Command arugment declaration and options.</p>
+<p>Command argument declaration and options.</p>
 </center>
 
 ---
 
 # Complex arguments
-By default other more complex aguments are also allowed, for example `Collections`, like `List` or `Set`.  
+By default, other more complex arguments are also allowed, for example `Collections`, like `List` or `Set`.  
 
 # Collections
 Collections are also type safe, meaning if you do `List<Integer>` that means any argument that is *not* a number will be `null`, for example:  
 `/foo bar 1 2 3 hello 4 5` -> `[1, 2, 3, null, 4, 5]`.  
-Collectiosn by default are **only** allowed as the last arguement, for example:
+Collections by default are **only** allowed as the last argument, for example:
 ```java
 void execute(Sender sender, int number, List<String> args);
 ```

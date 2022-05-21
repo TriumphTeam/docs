@@ -10,7 +10,7 @@
 
 # Creating a Scrolling GUI
 
-To create a Scrolling GUI its pretty straight forward:
+To create a Scrolling GUI It's pretty straight forward:
 
 ```java
 ScrollingGui gui = Gui.scrolling()
@@ -20,7 +20,7 @@ ScrollingGui gui = Gui.scrolling()
         .scrollType(ScrollType.HORIZONTAL)
         .create();
 ```
-The scrollType if not specified will fallback to `ScrollType.VERTICAL`
+The scrollType if not specified will fall back to `ScrollType.VERTICAL`
 
 
 Just like the normal [GUI](gui.md) the first parameter is the rows the GUI should have. Like the [Paginated GUI](pagegui.md) the second parameter is to specify the page size, as in how big the page should be, in the example above it's 45 slots dedicated for the page.

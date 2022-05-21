@@ -1,6 +1,6 @@
 <center><h1>Commands</h1></center>
 <center>
-<p>The basic structure of a command and it's sub commands.</p>
+<p>The basic structure of a command, and it's sub commands.</p>
 </center>
 
 ---
@@ -71,6 +71,3 @@ Registering the command is very simple, you simply do:
 ```java
 commandManager.registerCommand(new MyCommand());
 ```
-
-# Good practices
-Visit [this](/) page to see good practices about writting and organizing the commands.
