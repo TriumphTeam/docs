@@ -57,7 +57,7 @@ gui.setOpenGuiAction(event -> {
 
 # Slot actions
 
-If you want to add a click action to a specif slot without needing to have to specify the item in the slot, you can simple use the `setSlotAction`.  
+If you want to add a click action to a specif slot without needing to have to specify the item in the slot, you can simply use the `setSlotAction`.  
 It also supports both rows and columns and slots.
 
 ```java
@@ -66,7 +66,7 @@ gui.addSlotAction(slot, event -> {
     // Handle your open action
 });
 
-// With rows and collumns
+// With rows and columns
 gui.addSlotAction(row, col, event -> {
     // Handle your open action
 });
@@ -82,7 +82,7 @@ gui.update();
 
 # Update title
 
-This will also update the title but you need to pass the new title down. _This feature has not been tested enough_.
+This will also update the title, but you need to pass the new title down. _This feature has not been tested enough_.
 
 ```java
 gui.updateTitle(Component.text("New Title"));
@@ -98,7 +98,7 @@ It also supports both rows and columns and slots.
 // Using slots
 gui.updateItem(slot, new ItemStack(Material.STONE));
 
-// Using rows and collumns
+// Using rows and columns
 gui.updateItem(row, col, new ItemStack(Material.STONE));
 ```
 

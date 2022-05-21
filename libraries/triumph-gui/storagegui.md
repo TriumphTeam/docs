@@ -1,6 +1,6 @@
 <center><h1>StorageGUI</h1></center>
 <center>
-<p>GUI that does not clear it's items on close/open, any external non GuiItem added to it will stay.</p>
+<p>GUI that does not clear its items on close/open, any external non GuiItem added to it will stay.</p>
 </center>
 
 !!!!  

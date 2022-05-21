@@ -5,7 +5,7 @@
 
 ---
 
-By default the library adds many argument types.
+By default, the library adds many argument types.
 
 # Common:
 * `short`/`Short`
@@ -17,10 +17,10 @@ By default the library adds many argument types.
 * `String`
 * `Enums` - Any type of enums, for example `Material`.
 
-Aditionally each platform also adds a few default types.
+Additionally, each platform also adds a few default types.
 
 # Bukkit:
-* `Material` - Overriden from normal enums to use `matchMaterial` instead of `valueOf`.
+* `Material` - Uses `matchMaterial` instead of `valueOf` by overriding default enum behavior.
 * `Player`
 * `World`
 

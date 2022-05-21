@@ -10,11 +10,11 @@ This library is heavily based on the Kotlin framework **[ktor](https://ktor.io/)
 The main utility of the core library is to simplify adding and getting "features" of the plugin.  
 
 # What are features?
-"Feature" is a concept for anything that adds to the application. You can think of it like "registrables", something that you can register and use later.
-For example you want a "PlayerManager", you can turn that into a "feature" that can be easily installed with `install(PlayerManager)` and gotten with `feature(PlayerManager)`.  
+"Feature" is a concept for anything that adds to the application. You can think of it like "register-ables", something that you can register and use later.
+For example, you want a "PlayerManager", you can turn that into a "feature" that can be easily installed with `install(PlayerManager)` and gotten with `feature(PlayerManager)`.  
 
 # Platforms
-Currently you can use it for `Bukkit` and `JDA`.
+Currently, you can use it for `Bukkit` and `JDA`.
 
 # Creating a feature
 Firstly let's create a simple feature that allows us to print `hello`.

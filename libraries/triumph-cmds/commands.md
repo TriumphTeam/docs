@@ -1,6 +1,6 @@
 <center><h1>Commands</h1></center>
 <center>
-<p>The basic structure of a command and it's sub commands.</p>
+<p>The basic structure of a command, and its sub commands.</p>
 </center>
 
 ---
@@ -32,7 +32,7 @@ As the real sender name can change based on platform or the provided custom send
 !!!
 
 # Sub commands
-Each sub commands are declared by methods, currently there is no other way to declare it's name and alias other than through annotations.
+Each sub commands are declared by methods, currently there is no other way to declare its name and alias other than through annotations.
 
 ## Default
 A `@Default` method is a "sub command without a name", implying it is the main executor of a command that has no sub commands.  
@@ -71,6 +71,3 @@ Registering the command is very simple, you simply do:
 ```java
 commandManager.registerCommand(new MyCommand());
 ```
-
-# Good practices
-Visit [this](/) page to see good practices about writting and organizing the commands.

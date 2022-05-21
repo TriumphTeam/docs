@@ -6,7 +6,7 @@
 ---
 
 # Creating a command manager
-Each platform has it's own command manager and each manager has it's own sender type.
+Each platform has its own command manager and each manager has its own sender type.
 ```java
 // Bukkit
 BukkitCommandManager<CommandSender> manager = BukkitCommandManager.create(plugin);
