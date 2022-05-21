@@ -9,7 +9,7 @@
 The concept of arguments in the library are based on parameters, each parameter declared in the method will be a command argument.
 
 # Sender
-The first parameter of the command method **must** always be a sender. You can read more about the sender [here](/).
+The first parameter of the command method **must** always be a sender. You can read more about the sender [here](/library/triumph-cmds/custom-senders).
 
 # Creating a command with arguments
 Let's create the following command `/give item diamond 5`. Where `give` is the command, `item` is the sub command, `diamond` is an argument of type `Material` and `5` is the amount or an `int`.
