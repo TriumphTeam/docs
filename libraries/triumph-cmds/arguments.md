@@ -12,7 +12,7 @@ The concept of arguments in the library are based on parameters, each parameter 
 The first parameter of the command method **must** always be a sender. You can read more about the sender [here](/).
 
 # Creating a command with arguments
-Let's create the following command `/give item diamond 5`. Where `give` is the command, `item` is the sub command, `diamond` is an argument of type `Material` and `5` is the amound or an `int`.
+Let's create the following command `/give item diamond 5`. Where `give` is the command, `item` is the sub command, `diamond` is an argument of type `Material` and `5` is the amount or an `int`.
 ```java
 @Command("give")
 class MyClass extends BaseCommand {
