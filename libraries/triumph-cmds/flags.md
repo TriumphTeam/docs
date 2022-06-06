@@ -11,6 +11,22 @@ or mark what certain arguments are going to be explicitly. It's useful for contr
 In commands, the argument would be the `-n` part of `/flag example -n=1`.
 
 ## Example of Registering Flags
+
+### Without Flag Argument
+```java
+@Command("flag")
+public class Command {
+    
+    @SubCommand("example")
+    @CommandFlags({@Flag(flag = "f")})
+    public void execute(Sender sender, Flags flags) {
+        flags.getValue("f").ifPresent(arg -> {}); // no argument value since no argument
+    }
+    
+}
+```
+
+### With Flag Argument
 ```java
 @Command("flag")
 public class Command {
