@@ -40,5 +40,8 @@ For each individual `@Flag` annotation, you can choose to define these flags wit
 * `argument` - java class of the type of argument desired
 * `suggestion` - string suggestion argument
 
+Either the `flag` or `longFlag` fields must be present. By default, argument is `void.class` which
+corresponds to no argument. The suggestion is what will be suggested as the argument for the flag.
+
 
 
