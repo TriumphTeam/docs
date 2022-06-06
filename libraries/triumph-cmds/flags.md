@@ -20,7 +20,9 @@ public class Command {
     @SubCommand("example")
     @CommandFlags({@Flag(flag = "f")})
     public void execute(Sender sender, Flags flags) {
-        flags.getValue("f").ifPresent(arg -> {}); // no argument value since no argument
+        if (flags.hasFlag("f")) {
+            ...
+        }
     }
     
 }
@@ -32,7 +34,7 @@ public class Command {
 public class Command {
     
     @SubCommand("example")
-    @CommandFlags({@Flag(flag = "n", longFlag = "num", argument = int.class, suggestion = "1")})
+    @CommandFlags({@Flag(flag = "n", longFlag = "num", argument = int.class, suggestion = "numbers")})
     public void example(Sender sender, Flags flags) {
         flags.getValue("n").ifPresent(arg -> {
             int num = Integer.parseInt(arg);
