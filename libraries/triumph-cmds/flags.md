@@ -8,15 +8,15 @@
 # Flags
 Flags, if you didn't already know, when in commands are typically short identifiers that convey bits of information
 or mark what certain arguments are going to be explicitly. It's useful for controlling lots of optional arguments.
-In commands, the argument would be the `-n` part of `/example flag -n=3`.
+In commands, the argument would be the `-n` part of `/flag example -n=1`.
 
 ## Example of Registering Flags
 ```java
-@Command("example")
+@Command("flag")
 public class Command {
     
-    @SubCommand("flag")
-    @CommandFlags({@Flag(flag = "n", longFlag = "num", argument = int.class, suggestion = "[<number>]")})
+    @SubCommand("example")
+    @CommandFlags({@Flag(flag = "n", longFlag = "num", argument = int.class, suggestion = "1")})
     public void example(Sender sender, Flags flags) {
         flags.getValue("n").ifPresent(arg -> {
             int num = Integer.parseInt(arg);
