@@ -75,6 +75,11 @@
         },
         {
           "type": "ITEM",
+          "literal": "Custom Arguments",
+          "destination": "custom-arguments"
+        },
+        {
+          "type": "ITEM",
           "literal": "Flags",
           "destination": "flags"
         }
