@@ -82,6 +82,11 @@
           "type": "ITEM",
           "literal": "Flags",
           "destination": "flags"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Suggestions",
+          "destination": "suggestions"
         }
       ]
     },
