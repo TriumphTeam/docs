@@ -75,6 +75,11 @@
         },
         {
           "type": "ITEM",
+          "literal": "Named Arguments",
+          "destination": "named-arguments"
+        },
+        {
+          "type": "ITEM",
           "literal": "Custom Arguments",
           "destination": "custom-arguments"
         },
