@@ -8,15 +8,33 @@
 # Flags
 Flags, if you didn't already know, when in commands are typically short identifiers that convey bits of information
 or mark what certain arguments are going to be explicitly. It's useful for controlling lots of optional arguments.
-In commands, the argument would be the `-n` part of `/example flag -n=3`.
+In commands, the argument would be the `-n` part of `/flag example -n=1`.
 
 ## Example of Registering Flags
+
+### Without Flag Argument
 ```java
-@Command("example")
+@Command("flag")
 public class Command {
     
-    @SubCommand("flag")
-    @CommandFlags({@Flag(flag = "n", longFlag = "num", argument = int.class, suggestion = "[<number>]")})
+    @SubCommand("example")
+    @CommandFlags({@Flag(flag = "f")})
+    public void execute(Sender sender, Flags flags) {
+        if (flags.hasFlag("f")) {
+            ...
+        }
+    }
+    
+}
+```
+
+### With Flag Argument
+```java
+@Command("flag")
+public class Command {
+    
+    @SubCommand("example")
+    @CommandFlags({@Flag(flag = "n", longFlag = "num", argument = int.class, suggestion = "numbers")})
     public void example(Sender sender, Flags flags) {
         flags.getValue("n").ifPresent(arg -> {
             int num = Integer.parseInt(arg);
@@ -39,6 +57,9 @@ For each individual `@Flag` annotation, you can choose to define these flags wit
 * `longFlag` - long flag definition (`/command --longFlag`)
 * `argument` - java class of the type of argument desired
 * `suggestion` - string suggestion argument
+
+Either the `flag` or `longFlag` fields must be present. By default, argument is `void.class` which
+corresponds to no argument. The suggestion is what will be suggested as the argument for the flag.
 
 
 
