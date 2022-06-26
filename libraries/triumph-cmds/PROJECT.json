@@ -75,8 +75,23 @@
         },
         {
           "type": "ITEM",
+          "literal": "Named Arguments",
+          "destination": "named-arguments"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Custom Arguments",
+          "destination": "custom-arguments"
+        },
+        {
+          "type": "ITEM",
           "literal": "Flags",
           "destination": "flags"
+        },
+        {
+          "type": "ITEM",
+          "literal": "Suggestions",
+          "destination": "suggestions"
         }
       ]
     },
@@ -94,8 +109,8 @@
         },
         {
           "type": "ITEM",
-          "literal": " ",
-          "destination": " "
+          "literal": "Requirements",
+          "destination": "requirements"
         },
         {
           "type": "ITEM",
