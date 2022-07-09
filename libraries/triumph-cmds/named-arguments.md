@@ -6,7 +6,7 @@
 ---
 
 # Named Arguments
-Named arguments allow for arguments to be named. So instead of a command being `/foo bar baz 1`, this will allow for `/foo bar string:baz, number:1`.
+Named arguments allow for arguments to be named. So instead of a command being `/foo bar baz 1`, this will allow for `/foo bar string:baz number:1`.
 This also allows for arguments to be inputted in any order!
 
 ## Example of Named Arguments
