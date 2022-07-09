@@ -21,7 +21,8 @@ commandManager.registerNamedArguments(ArgumentKey.of("example"), // the key of t
 Now we need to setup our command:
 ```java
 @NamedArguments("example")
-void execute(Sender sender, String string, int number) {
-    println("string=" + string + ", number=" + number); // outputs string=baz, number=1
+void execute(Sender sender, Arguments arguments) {
+    println("string=" + arguments.get("string", String.class).get() + ", number=" + arguments.get("number", int.class).get()); // outputs string=baz, number=1
+    // this is just an example, please dont use Optional#get without checking if the value is present/empty first!
 }
 ```
