@@ -15,10 +15,10 @@ Setting you fill item will fill the slots in your GUI that doesn't contain a GUI
 
 ```java
 // Single fill item
-gui.getFiller().fill(ItemBuilder.from(Material.BLACK_STAINED_GLASS_PANE)).asGuiItem());
+gui.getFiller().fill(ItemBuilder.from(Material.BLACK_STAINED_GLASS_PANE).asGuiItem());
 
 // Multiple fill items
-gui.getFiller().fill(Arrays.asList(ItemBuilder.from(Material.BLACK_STAINED_GLASS_PANE)).asGuiItem(), ItemBuilder.from(Material.WHITE_STAINED_GLASS_PANE)).asGuiItem()));
+gui.getFiller().fill(Arrays.asList(ItemBuilder.from(Material.BLACK_STAINED_GLASS_PANE).asGuiItem(), ItemBuilder.from(Material.WHITE_STAINED_GLASS_PANE).asGuiItem()));
 ```
 
 Just like any other item these items can also have a click action, but they'll be the same for all the slots it is filled.
