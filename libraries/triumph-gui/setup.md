@@ -22,7 +22,7 @@ dependencies {
 
 ```kotlin
 plugins {
-    id("com.github.johnrengelman.shadow") version "7.1.1"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 shadowJar {
@@ -49,7 +49,7 @@ dependencies {
 
 ```groovy
 plugins {
-    id "com.github.johnrengelman.shadow" version "7.1.1"
+    id "com.github.johnrengelman.shadow" version "8.1.1"
 }
 
 shadowJar {
