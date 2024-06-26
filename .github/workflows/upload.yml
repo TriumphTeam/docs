@@ -8,10 +8,7 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/triumphteam/website:latest
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.github_token }}
+      image: lichthund/docs:latest
 
     steps:
       # Check out the repo to access the files
