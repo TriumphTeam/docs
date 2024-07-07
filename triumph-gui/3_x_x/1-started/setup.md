@@ -17,12 +17,12 @@ dependencies {
 }
 ```
 
- In order to include the lib in your project, you need to add `shadowJar` plugin `build.gradle.kts`.  
+ To include the lib in your project, you need to add `shadowJar` plugin `build.gradle.kts`.  
  Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.plugin`.
 
 ```kotlin
-plugins {
-    id("com.github.johnrengelman.shadow") version "7.1.1"
+plugins { 
+    id("io.github.goooler.shadow") version "8.1.8"
 }
 
 shadowJar {
@@ -30,7 +30,6 @@ shadowJar {
 }
 ```
 +++
-
 +Gradle (Groovy)+
 You need to add the dependency to your `build.gradle`.
 
@@ -44,12 +43,12 @@ dependencies {
 }
 ```
 
- In order to include the lib in your project, you need to add `shadowJar` plugin `build.gradle`.  
+ To include the lib in your project, you need to add `shadowJar` plugin `build.gradle`.  
  Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plugin`.
 
 ```groovy
 plugins {
-    id "com.github.johnrengelman.shadow" version "7.1.1"
+    id "io.github.goooler.shadow" version "8.1.8"
 }
 
 shadowJar {
@@ -69,14 +68,14 @@ You need to add the dependency to your pom.xml.
 </dependency>
 ```
 
- In order to include the framework in your project, you need to add the following to your `pom.xml`, in the plugins section.  
+ To include the framework in your project, you need to add the following to your `pom.xml`, in the plugins section.  
  Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plugin`.
 
 ```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-shade-plugin</artifactId>
-    <version>3.2.4</version>
+    <version>3.6.0</version>
     <configuration>
         <relocations>
             <relocation>
