@@ -1,7 +1,5 @@
 <center><h1>PaginatedGUI</h1></center>
-<center>
-<p>Simple GUI that allows you to have multiple pages and navigate between them.</p>
-</center>
+<center><p>Simple GUI that allows you to have multiple pages and navigate between them.</p></center>
 
 # Paginated GUI
 

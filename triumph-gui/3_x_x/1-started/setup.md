@@ -1,9 +1,9 @@
 <center><h1>Setup</h1></center>
-<center>
-<p>This is how you add the lib to your project.</p>
-</center>
+<center><p>Adding the library to your project.</p></center>
 
--+-
+---
+
+-+-  
 +Gradle (Kotlin)+
 You need to add the dependency to your `build.gradle.kts`.
 

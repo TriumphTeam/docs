@@ -1,7 +1,5 @@
 <center><h1>GUI Features</h1></center>
-<center>
-<p>After the basics of a GUI there is a lot more useful features you can use.</p>
-</center>
+<center><p>After the basics of a GUI there is a lot more useful features you can use.</p></center>
 
 # Common features
 

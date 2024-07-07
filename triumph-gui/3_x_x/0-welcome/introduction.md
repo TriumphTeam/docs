@@ -1,7 +1,7 @@
 <center><h1>Introduction</h1></center>
-<center>
-<p>This is just an example text for now.</p>
-</center>
+<center><p>Library for creating simple GUIs in Bukkit plugins.</p></center>
+
+---
 
 <center><img src="https://i.imgur.com/pV6Fass.png"  alt="license"/></center>
 
@@ -13,10 +13,6 @@
   <a href="https://mattstudios.me/discord"><img src="https://img.shields.io/discord/493380790718038028?label=discord&style=flat-square"  alt="language"/></a>
 </p>
 </center>
-
-!!!!  
-Attention! This version of the Docs is WIP and incomplete.  
-!!!
 
 ---
 

@@ -1,7 +1,5 @@
 <center><h1>GUI</h1></center>
-<center>
-<p>This is how you create a basic GUI</p>
-</center>
+<center><p>This is how you create a basic GUI</p></center>
 
 # GUI
 
