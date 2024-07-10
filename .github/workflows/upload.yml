@@ -2,7 +2,7 @@ name: Upload docs
 
 on:
   push:
-    branches: [ "update/new" ]
+    branches: [ "main" ]
 
 jobs:
   upload:
