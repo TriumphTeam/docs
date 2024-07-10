@@ -51,4 +51,4 @@ class MyCommand extends BaseCommand {
 	}
 }
 ```
-You can learn how to create and register commands [here](commands).
+You can learn how to create and register commands [here](/commands).

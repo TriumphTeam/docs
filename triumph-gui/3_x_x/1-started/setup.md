@@ -3,7 +3,7 @@
 
 ---
 
--+-  
+-+-
 +Gradle (Kotlin)+
 You need to add the dependency to your `build.gradle.kts`.
 

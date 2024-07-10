@@ -4,7 +4,7 @@
 ---
 
 # Requirements
-Requirements give fine control to determine whether or not a sender is allowed to run a command.
+Requirements give fine control to determine whether a sender is allowed to run a command.
 
 ## Example of requirements
 Firstly, we need to register the requirement.

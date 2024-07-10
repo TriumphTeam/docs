@@ -20,8 +20,9 @@ StorageGui gui = Gui.storage()
         .create();
 ```
 
-Just like the normal [GUI](gui) the first parameter is the rows the GUI should have.
+Just like the normal [GUI](/gui) the first parameter is the rows the GUI should have.
 
 # Adding the item to the GUI
 
-Differently to the normal [GUI](gui), the `addItem` method takes an `ItemStack` instead. Any `GuiItem` added will have actions applied to it, the persistent items are simple ItemStacks that have nothing associated to it.
+Differently to the normal [GUI](/gui), the `addItem` method takes an `ItemStack` instead. Any `GuiItem` added will have actions applied to it;
+the persistent items are simple ItemStacks that have nothing associated to it.

@@ -20,6 +20,6 @@ ScrollingGui gui = Gui.scrolling()
 The scrollType if not specified will fall back to `ScrollType.VERTICAL`
 
 
-Just like the normal [GUI](gui) the first parameter is the rows the GUI should have. Like the [Paginated GUI](pagegui) the second parameter is to specify the page size, as in how big the page should be, in the example above it's 45 slots dedicated for the page.
+Just like the normal [GUI](/gui) the first parameter is the rows the GUI should have. Like the [Paginated GUI](/pagegui) the second parameter is to specify the page size, as in how big the page should be, in the example above it's 45 slots dedicated for the page.
 
-Everything else about this GUI is exactly like the [Paginated](pagegui).
+Everything else about this GUI is exactly like the [Paginated](/pagegui).

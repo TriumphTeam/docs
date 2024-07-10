@@ -29,7 +29,7 @@ dependencies {
 }
 ```
 
-In order to include the lib in your project, you need to add `shadow` plugin `build.gradle.kts`.  
+To include the lib in your project, you need to add `shadow` plugin `build.gradle.kts`.  
 Replace `[YOUR PACKAGE]` with your plugin's package, for example `me.myplugin.plugin`.
 
 ```kotlin
