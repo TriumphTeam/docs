@@ -1,6 +1,8 @@
 <center><h1>Introduction</h1></center>
 <center><p>This is just an example text for now.</p></center>
 
+---
+
 <center><img src="https://i.imgur.com/pV6Fass.png"  alt="license"/></center>
 
 # Lorem ipsum

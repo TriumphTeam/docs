@@ -1,6 +1,8 @@
 <center><h1>GUI Features</h1></center>
 <center><p>After the basics of a GUI there is a lot more useful features you can use.</p></center>
 
+---
+
 # Common features
 
 The following are the common features in all GUIs.

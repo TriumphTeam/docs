@@ -1,6 +1,8 @@
 <center><h1>ScrollingGUI</h1></center>
 <center><p>Simple GUI that allows you to scroll on a Paginated GUI instead of going page by page.</p></center>
 
+---
+
 # Scrolling GUI
 
 ![](https://i.imgur.com/nadBZEL.gif)

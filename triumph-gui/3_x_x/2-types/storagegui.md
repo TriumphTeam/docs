@@ -1,6 +1,8 @@
 <center><h1>StorageGUI</h1></center>
 <center><p>GUI that does not clear its items on close/open, any external non GuiItem added to it will stay.</p></center>
 
+---
+
 !!!!  
 Attention! Items stored inside this GUI will not Persist on Server Restart.  
 !!!
