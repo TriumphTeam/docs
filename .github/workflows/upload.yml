@@ -1,0 +1,21 @@
+name: Upload docs
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    container:
+      image: lichthund/docs:latest
+
+    steps:
+      # Check out the repo to access the files
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Run application with the files!
+      - name: Run
+        run: |
+          java -jar /app/application.jar -i $GITHUB_WORKSPACE -b ${{ secrets.AUTH }} -u https://new.triumphteam.dev/
