@@ -10,7 +10,7 @@
 <p>
   <img src="https://img.shields.io/github/license/TriumphTeam/triumph-cmds?color=blue&style=flat-square"  alt="license"/>
   <img src="https://img.shields.io/github/v/release/TriumphTeam/triumph-cmds?color=green&style=flat-square" alt="release">
-  <a href="https://mattstudios.me/discord"><img src="https://img.shields.io/discord/493380790718038028?label=discord&style=flat-square"  alt="discord"/></a>
+  <a href="https://triumphteam.dev/discord"><img src="https://img.shields.io/discord/493380790718038028?label=discord&style=flat-square"  alt="discord"/></a>
 </p>
 </center>
 
