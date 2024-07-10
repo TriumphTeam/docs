@@ -17,4 +17,4 @@ jobs:
       # Run application with the files!
       - name: Run
         run: |
-          java -jar /app/application.jar -i $GITHUB_WORKSPACE -b ${{ secrets.AUTH }} -u https://new.triumphteam.dev/
+          java -jar /app/application.jar -i $GITHUB_WORKSPACE -b ${{ secrets.AUTH }} -u https://triumphteam.dev/
