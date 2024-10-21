@@ -13,15 +13,15 @@ Kotlin examples require the `dev.triumphteam:triumph-gui-<platform>kotlin:<versi
 
 # Starting
 
-To create a [GUI](/gui), we call the builder for the desired (Container Type)[/container-type]. This will return a GUI
+To create a [GUI](/gui), we call the builder for the desired [Container Type](/container-type). This will return a GUI
 builder.  
 The builder allows you to setup all the components as well as personalize how the GUI should function. Like for example
-setting custom (renderer)[/renderer]s.
+setting custom [renderer](/renderer)s.
 
 Let's create a GUI with a `1` row and an item the middle that sends the `player` a message when clicking.
 
 -+-  
-+Java+
++Java+  
 
 ```java
 final var gui = Gui.of(1)
@@ -41,7 +41,7 @@ gui.open(player);
 ```
 
 +++  
-+Kotlin+
++Kotlin+  
 ```kotlin
 val gui = buildGui {
     // If not set, defaults to chest - 1 row
@@ -67,5 +67,5 @@ gui.open(player)
 ```
 +++  
 -+-  
-Now that the GUI is created, we can dive into something more complex by utilizing (States)[/states].  
-We can continue onto the next example (here)[/using-states].
+Now that the GUI is created, we can dive into something more complex by utilizing [States](/states).  
+We can continue onto the next example [here](/using-states).

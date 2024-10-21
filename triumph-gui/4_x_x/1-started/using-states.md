@@ -13,14 +13,14 @@ Kotlin examples require the `dev.triumphteam:triumph-gui-<platform>kotlin:<versi
 
 # Adding state
 
-A quick explanation of a (State)[/states] is that it's an object that can be "tied" to a (Component)[/components] which when 
+A quick explanation of a [State](/states) is that it's an object that can be "tied" to a [Component](/components) which when 
 modifier cause the component to re-render.  
 
 Let's take the previous example and add some a state to it. We can create a state that'll keep track of how many times 
 a `player` has clicked on the item.  
 
 -+-  
-+Java+
++Java+  
 
 ```java
 final var gui = Gui.of(1)
@@ -52,7 +52,7 @@ gui.open(player);
 ```
 
 +++  
-+Kotlin+
++Kotlin+  
 ```kotlin
 val gui = buildGui {
     // If not set, defaults to chest - 1 row
@@ -90,4 +90,4 @@ gui.open(player)
 +++  
 -+-  
 Congratulations you have built the most simple cookie clicker game!  
-But we can improve it even more, let's add title updating into the mix, read more in (here)[/updating-title].
+But we can improve it even more, let's add title updating into the mix, read more in [here](/updating-title).
