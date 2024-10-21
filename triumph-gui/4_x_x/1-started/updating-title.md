@@ -38,7 +38,6 @@ public final class HighScoreMutationPolicy implements StateMutationPolicy<Intege
     }
 }
 ```
-
 +++  
 +Kotlin+  
 
@@ -52,7 +51,6 @@ class HighScoreMutationPolicy : StateMutationPolicy<Int?> {
     }
 }
 ```
-
 +++  
 -+-  
 
@@ -73,7 +71,6 @@ private final MutableState<Integer> highScoreState = MutableState.of(0, new High
 ```kotlin
 private val highScoreState = mutableStateOf(0, HighScoreMutationPolicy())
 ```
-
 +++  
 -+-  
 
@@ -125,7 +122,6 @@ final var gui = Gui.of(1)
 
 gui.open(player);
 ```
-
 +++  
 +Kotlin+  
 
@@ -181,7 +177,6 @@ val gui = buildGui {
 
 gui.open(player)
 ```
-
 +++  
 -+-  
 

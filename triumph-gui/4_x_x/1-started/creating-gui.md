@@ -39,8 +39,7 @@ final var gui = Gui.of(1)
 // Now that the GUI is built, we can open it for the player.
 gui.open(player);
 ```
-
-+++  
++++
 +Kotlin+  
 ```kotlin
 val gui = buildGui {
@@ -67,5 +66,6 @@ gui.open(player)
 ```
 +++  
 -+-  
+
 Now that the GUI is created, we can dive into something more complex by utilizing [States](/states).  
 We can continue onto the next example [here](/using-states).
