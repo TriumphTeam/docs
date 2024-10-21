@@ -24,8 +24,8 @@ command class.
 For this state it's nice to make it so it can only be updated if the clicks are higher than the stored value. Thankfully
 we can use a [StateMutationPolicy](/mutation-policy) for that, so let's create a new one!
 
--+-  
-+Java+  
+-+-
++Java+
 
 ```java
 public final class HighScoreMutationPolicy implements StateMutationPolicy<Integer> {
@@ -38,8 +38,8 @@ public final class HighScoreMutationPolicy implements StateMutationPolicy<Intege
     }
 }
 ```
-+++  
-+Kotlin+  
++++
++Kotlin+
 
 ```kotlin
 class HighScoreMutationPolicy : StateMutationPolicy<Int?> {
@@ -51,33 +51,33 @@ class HighScoreMutationPolicy : StateMutationPolicy<Int?> {
     }
 }
 ```
-+++  
--+-  
++++
+-+-
 
 _The mutation policy in this example is not really needed; this is just an example of how it can be used._
 
 Now let's create a state with the new policy.
 
--+-  
-+Java+  
+-+-
++Java+
 
 ```java
 private final MutableState<Integer> highScoreState = MutableState.of(0, new HighScoreMutationPolicy());
 ```
 
-+++  
-+Kotlin+  
++++
++Kotlin+
 
 ```kotlin
 private val highScoreState = mutableStateOf(0, HighScoreMutationPolicy())
 ```
-+++  
--+-  
++++
+-+-
 
 Then we can change the GUI to support it.
 
--+-  
-+Java+  
+-+-
++Java+
 
 ```java
 final var gui = Gui.of(1)
@@ -122,8 +122,8 @@ final var gui = Gui.of(1)
 
 gui.open(player);
 ```
-+++  
-+Kotlin+  
++++
++Kotlin+
 
 ```kotlin
 val gui = buildGui {
@@ -177,8 +177,8 @@ val gui = buildGui {
 
 gui.open(player)
 ```
-+++  
--+-  
++++
+-+-
 
 When the GUI is opened for the first time the title will update with the clicks, once you close and re-open it, it'll
 only update once you reach a new high score.

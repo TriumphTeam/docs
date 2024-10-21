@@ -20,8 +20,8 @@ setting custom [renderer](/renderer)s.
 
 Let's create a GUI with a `1` row and an item the middle that sends the `player` a message when clicking.
 
--+-  
-+Java+  
+-+-
++Java+
 
 ```java
 final var gui = Gui.of(1)
@@ -40,7 +40,7 @@ final var gui = Gui.of(1)
 gui.open(player);
 ```
 +++
-+Kotlin+  
++Kotlin+
 ```kotlin
 val gui = buildGui {
     // If not set, defaults to chest - 1 row
@@ -64,8 +64,8 @@ val gui = buildGui {
 // Now that the GUI is built, we can open it for the player.
 gui.open(player)
 ```
-+++  
--+-  
++++
+-+-
 
 Now that the GUI is created, we can dive into something more complex by utilizing [States](/states).  
 We can continue onto the next example [here](/using-states).
