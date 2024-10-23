@@ -8,7 +8,7 @@ All examples are for the Paper platform, but it should be similar if not identic
 !!!
 
 !!!!  
-Kotlin examples require the `dev.triumphteam:triumph-gui-<platform>kotlin:<version>` dependency.
+Kotlin examples require the `dev.triumphteam:triumph-gui-<platform>-kotlin:<version>` dependency.
 !!!
 
 # Title and states
