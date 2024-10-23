@@ -133,6 +133,9 @@ val gui = buildGui {
         rows = 1
     }
 
+    // Changing the spam prevension to allow faster clicking, for fun
+    spamPreventionDuration = 0.seconds
+    
     // Delegate the value of the state
     // Not needed, but it's nicer to work with
     var highScore by highScoreState
