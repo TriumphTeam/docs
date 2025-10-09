@@ -1,0 +1,1 @@
+{gradle-condition}{maven-condition}
