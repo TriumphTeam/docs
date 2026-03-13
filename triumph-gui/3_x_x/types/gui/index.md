@@ -1,4 +1,4 @@
-![](https://i.imgur.com/pXnpNal.png)
+![](/static/gui-example.png)
 
 
 # Creating a GUI

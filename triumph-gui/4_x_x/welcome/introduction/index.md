@@ -1,29 +1,23 @@
-<center><h1 class="text-4xl text-white p-4">Triumph GUI</h1></center>
-<center>
-<p class="inline-flex gap-2">
-  <img src="https://img.shields.io/github/license/TriumphTeam/triumph-gui?color=blue&style=flat-square"  alt="license"/>
-  <img src="https://img.shields.io/github/v/release/TriumphTeam/triumph-gui?color=green&style=flat-square" alt="release">
-  <a href="https://triumphteam.dev/discord"><img src="https://img.shields.io/discord/493380790718038028?label=discord&style=flat-square"  alt="language"/></a>
-</p>
-</center>
+<h1 class="text-4xl text-dark-text-primary p-4 font-bold text-center">TRIUMPH GUI</h1>
 
 ---
 
-# Features
-* Simple to use.
-* Per item action.
-* Slot specific actions.
-* Close and Open actions.
-* Pagination GUI.
-* Scrolling GUI.
-* Item Builder.
+# Overview
+
+Triumph GUI is a UI library for your favorite block game. It was built with the intention of being straightforward
+to use and understand, while still being powerful enough to handle complex GUIs.   
+Currently, it only supports Paper and its forks, but in the future I would like to support more platforms,
+such as Fabric and Sponge.
 
 # Contributing
-Contributions, issues and feature requests are welcome!
-Feel free to check [issues page](https://github.com/TriumphTeam/triumph-gui/issues).
+
+Contributions, issues and feature requests are welcome! Feel free to check
+issues [page](https://github.com/TriumphTeam/triumph-gui/issues).
 
 # Show your support
+
 Give a star on [GitHub](https://github.com/TriumphTeam/triumph-gui) if this project helped you!
 
 # License
-This project is [MIT](https://github.com/TriumphTeam/triumph-gui/blob/master/LICENSE) licensed.
+
+This project is under [MIT](https://github.com/TriumphTeam/triumph-gui/blob/master/LICENSE) license.

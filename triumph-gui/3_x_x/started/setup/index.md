@@ -1,1 +1,1 @@
-{gradle-condition}{maven-condition}
+{buildtool-condition}

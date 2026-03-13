@@ -20,7 +20,7 @@ Replace `[YOUR PACKAGE]`with your plugin's package, for example `me.myplugin.plu
         <relocations>
             <relocation>
                 <pattern>dev.triumphteam.gui</pattern>
-                <shadedPattern>[YOUR PACKAGE].gui</shadedPattern> <!-- Replace package here here -->
+                <shadedPattern>[YOUR PACKAGE].gui</shadedPattern> <!-- Replace package here -->
             </relocation>
         </relocations>
     </configuration>

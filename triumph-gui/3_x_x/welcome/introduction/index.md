@@ -1,4 +1,4 @@
-<center><h1 class="text-4xl text-white p-4">Triumph GUI</h1></center>
+<center><h1 class="text-4xl text-dark-text-primary p-4 font-bold">TRIUMPH GUI</h1></center>
 <center>
 <p class="inline-flex gap-2">
   <img src="https://img.shields.io/github/license/TriumphTeam/triumph-gui?color=blue&style=flat-square"  alt="license"/>
